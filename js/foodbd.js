@@ -11,6 +11,10 @@ const searchFood = () => {
 }
 const displaySearchResult = (meals) => {
     const searchResult = document.getElementById('search-result');
+    searchResult.innerHTML = ''; // search result empty
+    /* if (meals.length == 0) {
+        // show no result found message
+    } */
     meals.forEach(meal => {
         console.log(meal);
         const div = document.createElement('div');
